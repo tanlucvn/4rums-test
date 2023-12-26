@@ -1,0 +1,161 @@
+.listingSection{
+    flex-basis: 70%;
+
+    .heading{
+        width: 100%;
+        justify-content: space-between;
+        
+        h3{
+            color: var(--main-text);
+        }
+        
+        h1{
+            font-size: var(--h2FontSize);
+            color: var(--main-text);
+            font-weight: 700;
+        }
+
+        .btn{
+            border: 1px solid transparent;
+            font-weight: 500;
+            background: transparent;
+        }
+
+        .btn:hover{
+            border: 1px solid var(--accent-color);
+        }
+    }
+
+    .secContainer{
+        width: 100%;
+        margin: 1rem 0;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .singleItem{
+            position: relative;
+            width: 150px;
+            height: 170px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            background: var(--secondary-bg);
+
+            &:hover{
+                background: var(--secondary-bg-tint);
+                box-shadow: 0 2px 2px var(--secondary-bg-tint);
+            }
+
+            img{
+                max-width: 100px;
+            }
+
+            .icon{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: var(--accent-color);
+            }
+
+            h3{
+                font-size: var(--h3FontSize);
+                color: var(--main-text);
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .sellers{
+        width: 100%;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: flex-start;
+
+        .topSellers, .featuredSellers{
+            .heading{
+                padding: 1rem 0;
+
+                .btn{
+                    padding: .5rem 1rem;
+                }
+            }
+
+            .card{
+                padding: 1rem 1.5rem;
+                border-radius: var(--border-radius);
+                background: var(--secondary-bg);
+                gap: 1rem;
+
+                .users{
+                    padding-right: 1rem;
+                    border-right: 2px solid var(--secondary-text);
+
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        border: 2px solid var(--secondary-bg-tint);
+                        transition: .5s ease;
+
+                        &:hover{
+                            transform: translateY(-10px);
+                        }
+                    }
+                }
+
+                .cardText{
+                    span{
+                        color: var(--main-text);
+                        font-weight: 500;
+
+                        small{
+                            font-weight: 400;
+
+                            .date{
+                                margin-left: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 990px){
+    .listingSection{
+        .sellers{
+            .card{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 918px){
+    .listingSection{
+        .singleItem{
+            width: 200px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 490px){
+    .listingSection{
+        .sellers{
+            flex-direction: column;
+            .card{
+                flex-direction: row;
+            }
+        }
+
+        .secContainer{
+            justify-content: center !important;
+        }
+    }
+}

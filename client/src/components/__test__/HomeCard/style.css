@@ -1,0 +1,297 @@
+.merge{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .welcome-container {
+        padding: 3em;
+        background: var(--secondary-bg);
+        border-radius: var(--border-radius);
+        width: 95%;
+        margin-top: 2em;
+
+        .welcome-flex {
+            display: flex;
+            align-items: center;
+        }
+    
+        .welcome-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .welcome-title {
+            font-size: 3em;
+            font-weight: 700;
+            color: var(--main-text);
+        }
+    
+        .welcome-description {
+            margin-top: 1em;
+            width: 90%;
+            color: var(--secondary-text);
+        }
+    
+        .calendar {
+            width: 40%;
+        }
+    
+        .get-started {
+            padding: 1em 2em;
+            background: var(--accent-color);
+            border-radius: var(--border-radius);
+            color: #fff;
+            font-weight: 500;
+            margin-top: 2em;
+            transition: .5s;
+        }
+    
+        .get-started:hover {
+            transition: .5s;
+            background: var(--accent-color-tint);
+        }    
+    }
+
+    /* <------------- right block ----------> */
+
+    .right {
+        margin-top: 2em;
+        max-width: 310px
+
+        
+    }
+
+
+    /* <------------- staff ----------> */
+
+    .title {
+        margin-bottom: 1em;
+    }
+
+    .title-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .staff-text {
+        font-size: var(--h3FontSize);
+        font-weight: bold;
+        color: var(--main-text);
+        margin-left: .3rem;
+    }
+
+    .mt {
+        margin-top: 0.2em;
+    }
+
+    .member-icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .icon {
+        padding: 1em;
+        background: var(--secondary-bg);
+        border-radius: var(--border-radius);
+        margin-right: 1em;
+    }
+
+    .staff-name {
+        font-weight: 400;
+        color: var(--main-text);
+    }
+
+    .staff-rank {
+        font-weight: 500;
+        color: var(--actions-color);
+        font-size: var(--smallFontSize);
+    }
+
+    .homecard-line {
+        margin: auto;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        height: 2px;
+        width: 75%;
+        background: var(--boxShadow-color);
+    }
+
+    /* <------------- threads ----------> */
+
+
+    .threads-icon {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1em;
+    }
+
+    .threads-title {
+        font-size: var(--h3FontSize);
+        font-weight: 600;
+        color: var(--secondary-text);
+        display: block;
+    }
+
+    .threads-author {
+        display: flex;
+        font-weight: 500;
+        color: var(--actions-color);
+        font-size: var(--smallFontSize);
+    }
+
+    .threads-tag {
+        margin-top: 1em;
+        font-size: 0.9em;
+    }
+
+    /* <------------- community forums ----------> */
+
+    .cf-title {
+        display: flex;
+        align-items: center;
+        margin-top: 3em;
+    }
+
+    .cf-title-text {
+        color: var(--main-text);
+        font-size: var(--h3FontSize);
+    }
+
+    .cf-tags {
+        display: flex;
+        margin-top: 1em;
+    }
+
+    .tags-count {
+        padding: 0.5em 2em;
+        border: 2px solid var(--boxShadow-color);
+        border-radius: var(--border-radius);
+        margin-right: 1em;
+        transition: .5s;
+    }
+
+    .active {
+        background: #0084ff !important; 
+    }
+
+    .tags-count:hover {
+        background: var(--secondary-bg);
+        transition: .5s;
+    }
+
+    .active {
+        background: #0084ff !important; 
+    }
+
+    .tags-name {
+        color: var(--main-text);
+    }
+
+    .cf-topics {
+        margin-top: 1em;
+    }
+
+    .cf-topics-count {
+        padding: 1em 1em;
+        display: flex;
+        background: var(--secondary-bg);
+        margin-top: 1em;
+        border-radius: var(--border-radius);
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .cf-topic-reactions {
+        display: flex;
+    }
+
+    .cf-topic-threads {
+        color: var(--secondary-text);
+        margin-right: 1em;
+    }
+
+    .cf-topic-messages {
+        color: var(--secondary-text);
+        margin-right: 1em;
+    }
+
+    .cf-topics-texts {
+        margin-right: 1em;
+        display: flex;
+    }
+
+    .cf-topics-icon-1 {
+        padding: 1em 1.5em;
+        border-radius: var(--border-radius);
+        margin-right: 1em;
+        background: #0084ff;
+    }
+
+    .cf-topics-icon-2 {
+        padding: 1em 1.5em;
+        border-radius: var(--border-radius);
+        margin-right: 1em;
+        background: #70b01f;
+    }
+
+    .cf-topics-icon-3 {
+        padding: 1em 1.5em;
+        border-radius: var(--border-radius);
+        margin-right: 1em;
+        background: #7a5dec;
+    }
+
+    .cf-topics-icon-4 {
+        padding: 1em 1.5em;
+        border-radius: var(--border-radius);
+        margin-right: 1em;
+        background: #ef742d;
+    }
+
+    .cf-topics-icon-5 {
+        padding: 1em 1.5em;
+        border-radius: var(--border-radius);
+        margin-right: 1em;
+        background: #70b01f;
+    }
+
+    .cf-topics-icon-6 {
+        padding: 1em 1.5em;
+        border-radius: var(--border-radius);
+        margin-right: 1em;
+        background: #0084ff;
+    }
+
+    .cf-topics-icon-7 {
+        padding: 1em 1.5em;
+        border-radius: var(--border-radius);
+        margin-right: 1em;
+        background: #7a5dec;
+    }
+
+    .cf-topic-name {
+        color: var(--main-text);
+        font-weight: 400;
+    }
+
+    .threads-amount {
+        color: var(--title-color);
+        font-weight: 400;
+    }
+
+    .messages-amount {
+        color: var(--title-color);
+        font-weight: 400;
+    }
+
+    .forum-type {
+        color: var(--secondary-text);
+        font-weight: 400;
+    }
+
+    .fa-solid {
+        color: #fff;
+    }
+}

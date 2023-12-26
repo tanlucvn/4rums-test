@@ -1,0 +1,14 @@
+:root{
+    --tag-color-one: #e0fbf6;
+    --tag-color-text-one: #58c2a9;
+}
+.tag {
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: var(--border-radius);
+}
+
+.tag.approved {
+    background-color: var(--tag-color-one);
+    color: var(--tag-color-text-one);
+}
