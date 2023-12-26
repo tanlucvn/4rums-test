@@ -1,4 +1,4 @@
-const BACKEND = 'http://localhost:8000'
+const BACKEND = 'https://fourrums-server.onrender.com'
 
 
 /**
