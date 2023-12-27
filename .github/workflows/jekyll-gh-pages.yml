@@ -41,8 +41,8 @@ jobs:
   # Deployment job
   deploy:
     environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      name: server
+      url: https://fourrums-server.onrender.com
     runs-on: ubuntu-latest
     needs: build
     steps:
